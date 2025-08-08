@@ -11,7 +11,7 @@ class CmdVelSerialNode(Node):
         super().__init__('agent_serial_cmd_vel')
 
         try:
-            self.ser = serial.Serial('/dev/ttyUSB0', 115200, timeout=1)  # Ganti port sesuai dengan device Anda
+            self.ser = serial.Serial('/dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0001-if00-port0', 115200, timeout=1)  # Ganti port sesuai dengan device Anda
             self.get_logger().info('Serial port opened successfully.')
         except serial.SerialException as e:
             self.get_logger().error(f'Failed to open serial port: {e}')
