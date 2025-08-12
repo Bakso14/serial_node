@@ -61,9 +61,9 @@ class CmdVelSerialNode(Node):
                 linear_x = float(values[0])
                 linear_y = float(values[1])
                 angular_z = float(values[2])
-                V1 = float(values[3])*5
-                V2 = float(values[4])*5
-                V3 = float(values[5])*5
+                V1 = float(values[3])
+                V2 = float(values[4])
+                V3 = float(values[5])
 
                 if data:
                     self.get_logger().info(f"Received from serial: {data}")
