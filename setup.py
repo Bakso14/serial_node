@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "node_serial_cmd_vel = serial_node.node_serial_cmd_vel:main"
+            "node_serial_cmd_vel = serial_node.node_serial_cmd_vel:main",
+            "node_serial_wheel = serial_node.node_serial_wheel:main"
         ],
     },
 )
